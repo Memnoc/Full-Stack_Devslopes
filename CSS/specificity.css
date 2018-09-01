@@ -1,0 +1,79 @@
+h1, h2, h3 {
+    color: rgb(168, 18, 18);
+}
+
+/* This is specificity:
+Rule 1: The later declaration takes over */
+
+h1 {
+    color: green;
+}
+
+
+/* Rule 2: green wins:
+el(1) + el(1) = 2
+vs
+el(1) + el(1) = 2 (latter wins when equal points */
+
+html h2 {
+    color: red;
+}
+
+body h2 {
+    color: green;
+}
+
+/* Rule 3: the .container wins because it has 11 points
+class(1) + el(1) = 11
+vs 
+el(1)+el(1) = 2  */
+
+.container h4 {
+    color: red;
+}
+
+div h4 {
+    color: green;
+}
+
+/* Rule 4: the id selector wins
+id(1) + class(1) + element(0) = 100
+vs
+[id="foo"](1) + el(0) = 10
+*/
+
+#foo {
+    font-size: 20px;
+}
+
+[id="foo"] {
+    color: blue;
+}
+
+/* Rule 5: style embedded in HTML always wins to all
+no matter how specific you are */
+
+html body div.container h6#foo2 {
+    color: yellow;
+    font-size: 30px;
+}
+
+/* Rule 6: An exception to rule 5 is the syntax !important
+!important beats any other selector, regardless of
+how specific or high in score it is */
+
+h6 {
+    color: chocolate !important;
+}
+
+
+
+
+
+
+
+
+
+img {
+    float: right;
+}
