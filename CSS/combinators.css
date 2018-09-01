@@ -25,7 +25,8 @@ color: white;
 font-size: 20px;
 }
 
-/* This is a child selector */
+/* This is a child selector
+This only hits the immediate children (li) of the parent (ul) */
 ul > li {
 color: yellow;
 }
