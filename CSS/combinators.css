@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    color: rgb(0, 204, 255);
+    text-shadow: 1px 1px 3px darkblue;
+}
+
+.borderImg {
+border: 10px dashed red;
+}
+
+/* This is a descendent selector
+There is a parent (ul) and a child (li)
+The style hits the whole hierarchy,
+no matter how deep it is. */
+ul li {
+color: white;
+font-size: 20px;
+}
+
+/* This is a child selector */
+ul > li {
+color: yellow;
+}
