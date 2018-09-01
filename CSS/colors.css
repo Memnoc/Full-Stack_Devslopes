@@ -1,0 +1,31 @@
+/* Three ways we can use colors: */
+
+/* 1 - By writing the specific name of the color */
+.container {
+    background-color: grey;
+    box-shadow: 3px 5px 3px black; 
+}
+
+/* 2 - By writing the HEX code syntax */
+h1 {
+    color: #ffffff;
+}
+
+/* 3 - By writing the RGB code syntax */
+h2 {
+    color: rgb(0, 204, 255);
+}
+
+/* EXTRA - Working with gradient, a blend of colors */
+#grad {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+}
+
+/* EXTRA - Working with shadows */
+#shadows {
+    color: red;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
