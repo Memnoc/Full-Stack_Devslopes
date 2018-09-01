@@ -1,0 +1,9 @@
+/* This is an example of grouping
+You could also add .class and #id in the group */
+
+h1, h2, h3 {
+    color: blue;
+    text-shadow: 2px 2px black;
+    line-height: 1rem;
+    font-family: sans-serif;
+}
