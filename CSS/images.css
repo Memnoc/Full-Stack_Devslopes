@@ -1,0 +1,23 @@
+/* This changes the radius of the image corners
+You can do pixels or percentage */
+.lion {
+    border-radius: 10px;
+    /* Makes the image a circle */
+    /* border-radius: 50%; */
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+/* Making the image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+/* Working with opacity: 0=full transparent 1=solid */
+    opacity: 0.5;
+/* How to center images */
+    display: block;
+    margin: auto;
+}
