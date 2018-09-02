@@ -35,8 +35,11 @@
 
 
 // This is an object constructor
+// The best way to build re-usable objects
 
-function student(firstName, lastName, age) {
+var students = [];
+
+function Student(firstName, lastName, age) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -46,11 +49,26 @@ function student(firstName, lastName, age) {
     }
 }
 
-var student1 = new student("Jenny", "Craft", 24);
-var student2 = new student("Mark", "Crafton", 44);
-var student3 = new student("Jim", "Sbut", 14);
+var student1 = new Student("Jenny", "Craft", 24);
+var student2 = new Student("Mark", "Crafton", 44);
+var student3 = new Student("Jim", "Sbut", 14);
 console.log(student1.greeting());
 
 
+students.push(new Student("Jennaz", "Laga", 5));
+students.push(new Student("Timmy", "Turner", 8));
+students.push(new Student("Carl", "Koral", 15));
 
+// for(var i =0; i < students.length; i++) {
+//     var student = students[i];
+//     console.log(student.greeting());
+// }
+
+// When you need to iterate through the properties of
+// and object, you can do so with a for-in loop
+// Mainly for debuggin purposes
+var student = students[0];
+for (var key in student) {
+    console.log(student[key]);
+}
 
