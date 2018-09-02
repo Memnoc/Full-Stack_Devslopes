@@ -1,0 +1,28 @@
+ul li {
+    color: green;
+}
+
+ul > li {
+    color: red;
+}
+
+h1, h2, h3, h4, p {
+    color: blueviolet;
+}
+
+#foo {
+    color: green;
+}
+
+#secDiv h2 {
+    color: blue;
+}
+
+
+
+
+h3 {
+    color: brown;
+}
+
+

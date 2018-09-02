@@ -13,7 +13,7 @@ h1 {
 /* Rule 2: green wins:
 el(1) + el(1) = 2
 vs
-el(1) + el(1) = 2 (latter wins when equal points */
+el(1) + el(1) = 2 (latter wins when equal points) */
 
 html h2 {
     color: red;
