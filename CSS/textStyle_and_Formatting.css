@@ -1,0 +1,42 @@
+body {
+    background-color: #444;
+    text-align: center;
+}
+
+/* Working with Font Families 
+It's a good thing to have more than one in your project,
+so if a browser can't pick one up you have a fall-back font*/
+html {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* If you use pixels to determine the font size, the page will ignore
+any user setting to change the font size via browser (not ideal)
+use em or iem instead */
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-style: italic;
+}
+
+
+/* Working with text */
+/* This is an anchor tag */
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.formatting {
+    font-size: 45px;
+    line-height: 2em;
+    color: white;
+
+}
