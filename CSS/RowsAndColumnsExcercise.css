@@ -1,0 +1,122 @@
+h1 {
+    color: lime;
+    font-size: 40px;
+    text-align: center;
+    border: black;
+    text-shadow: 2px 2px black;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+body {
+    background-color: grey;
+}
+
+ol {
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/* Working with rows */
+.row {
+    display: flex;
+    width: 100%;
+    background-color: lightgrey;
+}
+    /* Everyt time a rows is created,
+    we want something to happen after it */
+    .row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+    /* .row_two {
+        display: flex;
+        width: 100%;
+}
+    .row_two::after {
+        display: block;
+        clear: both;
+        content: "";
+}
+
+    .row_three {
+        display: flex;
+        width: 100%;
+}
+    .row_three::after {
+        display: block;
+        clear: both;
+        content: "";
+}
+
+    .row_four {
+        display: flex;
+        width: 100%;
+    }
+    .row_four::after {
+        display: block;
+        clear: both;
+        content: "";
+} */
+
+.col-1{
+    width: 50%;
+}
+.col-2{width: 35%;}
+.col-3{width: 25%;}
+
+.col-4{width: 33.33%;}
+
+[class*="col-"]{
+    /* border: 2px solid red; */
+    padding: 15px;
+    float: left;
+}
+
+[class*="row_"]{
+    background-color: grey;
+    display: block;
+    clear: both;
+    content: "";
+}
+
+[class*="row_"]::after{
+    display: block;
+    clear: both;
+    content: "";
+
+}
+
+
+
+img {
+    display: block;
+    width: 400px;
+    height: 400px;;
+    margin: auto;
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 5px;
+}
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+
